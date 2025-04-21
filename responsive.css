@@ -1,0 +1,204 @@
+/* AL-SHIFT Consulting - Responsive Design */
+
+/* Large Screens (Default) */
+/* Styles already in style.css */
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Navigation */
+    .nav-item {
+        margin: 0 10px;
+    }
+    
+    /* Features */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Services Preview */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* About Page */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Join Us Page */
+    .join-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact Page */
+    .contact-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media screen and (max-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Section Padding */
+    section {
+        padding: 60px 0;
+    }
+    
+    /* Header & Navigation */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 15px 0;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 80px 0;
+    }
+    
+    /* Features */
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Services Preview */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Vision & Mission */
+    .vision-mission .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Values */
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Founder */
+    .founder-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .founder-image {
+        position: static;
+    }
+    
+    /* Service Items */
+    .service-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .service-item .service-icon {
+        margin: 0 auto 20px;
+    }
+    
+    /* Join Us */
+    .join-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Contact */
+    .contact-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        margin: 0 auto 20px;
+    }
+    
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .contact-info li {
+        justify-content: center;
+    }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* CTA Buttons */
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Form Elements */
+    .form-container {
+        padding: 30px 20px;
+    }
+}
