@@ -1107,3 +1107,8 @@ footer {
   background-color: #ECF87F;
   color: #2B7C85;
 }
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+}
