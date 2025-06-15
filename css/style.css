@@ -168,26 +168,27 @@ header {
 }
 
 /* ======= HERO SECTION ======= */
-.hero {
-  padding: 100px 0;
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+}
+
+.hero-image {
+  flex: 1 1 40%;
   text-align: center;
-  background: url('images/hero.jpg') center/cover no-repeat;
 }
 
-.hero-content {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  color: var(--primary);
-}
-
-.hero h2 {
-  font-size: 1.6rem;
-  color: var(--secondary);
-  margin-bottom: 20px;
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .tagline {
