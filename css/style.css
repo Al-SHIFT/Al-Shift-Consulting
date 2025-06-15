@@ -1085,27 +1085,25 @@ footer {
     display: none;
   }
 }
-/* === Custom Nav Styling === */
+/* Always show nav menu on desktop */
 .nav-menu {
+  display: flex !important;
+  gap: 20px;
   background-color: #6CB0A8;
-  border-radius: 8px;
   padding: 10px 20px;
+  border-radius: 8px;
 }
 
-.nav-menu .nav-item a {
-  color: #fff;
-  padding: 8px 15px;
+.nav-item a {
+  color: #ffffff;
   font-weight: 600;
+  padding: 8px 15px;
   display: inline-block;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-menu .nav-item a:hover {
-  background-color: #ECF87F; /* accent yellow */
-  color: #2B7C85; /* primary teal text */
-}
-
-.menu-toggle .bar {
-  background-color: #6CB0A8; /* match toggle to nav color */
+.nav-item a:hover {
+  background-color: #ECF87F;
+  color: #2B7C85;
 }
