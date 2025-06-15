@@ -940,3 +940,6 @@ footer {
 body {
   background: pink;
 }
+body {
+  background-color: pink !important;
+}
