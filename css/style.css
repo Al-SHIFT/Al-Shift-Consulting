@@ -220,6 +220,10 @@ header {
   background-color: var(--secondary);
 }
 
+.hero {
+  margin-top: 0;
+}
+
 .hero-image {
   flex: 1 1 45%;
   text-align: center;
