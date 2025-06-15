@@ -28,6 +28,11 @@ body {
   background-color: var(--white);
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -80,6 +85,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+header {
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
