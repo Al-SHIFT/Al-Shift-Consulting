@@ -879,3 +879,61 @@ footer {
 .footer-bottom p {
     margin-bottom: 10px;
 }
+/* --- Mobile Menu Styles --- */
+
+/* Base styles (menu hidden on mobile) */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 250px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+/* When menu is active (opened) */
+.nav-menu.active {
+  display: flex;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+/* Hamburger lines */
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Show menu toggle on mobile only */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px; /* adjust based on your header height */
+    right: 20px;
+    width: 200px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}
