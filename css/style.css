@@ -358,3 +358,49 @@ body {
     gap: 20px;
   }
 }
+.hero {
+  padding: 40px 0;
+  background-color: var(--white);
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive: stack image below text on small screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1 1 100%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
