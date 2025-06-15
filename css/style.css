@@ -937,3 +937,72 @@ footer {
     margin: 10px 0;
   }
 }
+/* ----- FULLY WORKING MOBILE MENU FIX ----- */
+
+/* Hide mobile nav by default */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Show menu when toggled */
+.nav-menu.active {
+  display: flex;
+}
+
+/* Hamburger styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Show hamburger only on mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    width: 220px;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .nav-menu.desktop {
+    display: none !important;
+  }
+}
