@@ -1066,3 +1066,22 @@ footer {
     margin: 10px 0;
   }
 }
+/* Show nav menu on desktop */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
