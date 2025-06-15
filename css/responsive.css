@@ -1,204 +1,76 @@
-/* AL-SHIFT Consulting - Responsive Design */
+/* responsive.css - styles for mobile and tablets */
 
-/* Large Screens (Default) */
-/* Styles already in style.css */
+/* Mobile First Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
 
-/* Medium Screens (Tablets) */
-@media screen and (max-width: 992px) {
-    .container {
-        width: 95%;
-    }
-    
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-    /* Navigation */
-    .nav-item {
-        margin: 0 10px;
-    }
-    
-    /* Features */
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* Services Preview */
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* About Page */
-    .values-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* Join Us Page */
-    .join-options {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* Contact Page */
-    .contact-options {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    /* Footer */
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu .nav-item {
+    margin: 10px 0;
+  }
+
+  .feature-grid,
+  .services-grid,
+  .values-grid,
+  .approach-grid,
+  .join-options,
+  .contact-options {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+
+  .founder-content {
+    flex-direction: column;
+  }
+
+  .founder-image,
+  .founder-text {
+    max-width: 100% !important;
+  }
 }
 
-/* Small Screens (Mobile) */
-@media screen and (max-width: 768px) {
-    /* Typography */
-    h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.6rem;
-    }
-    
-    h3 {
-        font-size: 1.3rem;
-    }
-    
-    /* Section Padding */
-    section {
-        padding: 60px 0;
-    }
-    
-    /* Header & Navigation */
-    .menu-toggle {
-        display: block;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: var(--white);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px 0;
-        height: calc(100vh - 70px);
-        overflow-y: auto;
-    }
-    
-    .nav-menu.active {
-        left: 0;
-    }
-    
-    .nav-item {
-        margin: 15px 0;
-    }
-    
-    /* Hero */
-    .hero {
-        padding: 80px 0;
-    }
-    
-    /* Features */
-    .feature-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Services Preview */
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Vision & Mission */
-    .vision-mission .container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Values */
-    .values-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Founder */
-    .founder-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .founder-image {
-        position: static;
-    }
-    
-    /* Service Items */
-    .service-item {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .service-item .service-icon {
-        margin: 0 auto 20px;
-    }
-    
-    /* Join Us */
-    .join-options {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Contact */
-    .contact-options {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    /* Footer */
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .footer-logo {
-        margin: 0 auto 20px;
-    }
-    
-    .footer-column h4::after {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .contact-info li {
-        justify-content: center;
-    }
-}
+/* Tablet Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .feature-grid,
+  .services-grid,
+  .values-grid,
+  .approach-grid,
+  .join-options,
+  .contact-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-/* Extra Small Screens */
-@media screen and (max-width: 480px) {
-    .container {
-        width: 100%;
-        padding: 0 20px;
-    }
-    
-    /* CTA Buttons */
-    .cta-buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    /* Form Elements */
-    .form-container {
-        padding: 30px 20px;
-    }
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
