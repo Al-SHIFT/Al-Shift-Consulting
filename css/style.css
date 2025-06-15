@@ -1085,22 +1085,27 @@ footer {
     display: none;
   }
 }
-/* === NAV MENU TABS CUSTOM STYLE === */
+/* === Custom Nav Styling === */
 .nav-menu {
   background-color: #6CB0A8;
   border-radius: 8px;
   padding: 10px 20px;
 }
 
-.nav-item a {
-  color: #ffffff;
-  padding: 10px 15px;
+.nav-menu .nav-item a {
+  color: #fff;
+  padding: 8px 15px;
+  font-weight: 600;
+  display: inline-block;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-item a:hover,
-.nav-item.active a {
-  background-color: #2B7C85; /* slightly darker teal for hover/active */
-  color: #ffffff;
+.nav-menu .nav-item a:hover {
+  background-color: #ECF87F; /* accent yellow */
+  color: #2B7C85; /* primary teal text */
+}
+
+.menu-toggle .bar {
+  background-color: #6CB0A8; /* match toggle to nav color */
 }
