@@ -1085,3 +1085,22 @@ footer {
     display: none;
   }
 }
+/* === NAV MENU TABS CUSTOM STYLE === */
+.nav-menu {
+  background-color: #6CB0A8;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.nav-item a {
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover,
+.nav-item.active a {
+  background-color: #2B7C85; /* slightly darker teal for hover/active */
+  color: #ffffff;
+}
