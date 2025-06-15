@@ -937,3 +937,6 @@ footer {
     margin: 10px 0;
   }
 }
+body {
+  background: pink;
+}
