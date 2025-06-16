@@ -267,3 +267,20 @@ footer {
     margin-bottom: 30px;
   }
 }
+.cta-button {
+  display: inline-block;
+  background-color: #2B7C85; /* Primary teal */
+  color: #ffffff; /* White text */
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary); /* Slight hover contrast */
+  color: #ffffff;
+}
