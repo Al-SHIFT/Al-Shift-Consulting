@@ -318,16 +318,22 @@ footer {
 }
 
 .founder-image {
-  flex: 1 1 30%;           /* Smaller on desktop */
-  max-width: 250px;        /* Caps width for alignment */
+  flex: 1 1 35%;         /* Slightly larger share of the row */
+  max-width: 320px;      /* Increase from 250px to allow more space */
 }
 
 .founder-image img {
   width: 100%;
   height: auto;
-  max-height: 500px;       /* Prevents image from overtaking text */
+  max-height: 500px;
   object-fit: cover;
-  border-radius: 8px;      /* Keeps styling consistent */
+  border-radius: 8px;
+}
+.founder-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;  /* <-- vertically aligns image with text */
 }
 
 @media (max-width: 768px) {
