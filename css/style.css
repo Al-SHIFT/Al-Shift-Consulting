@@ -26,6 +26,8 @@ body {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--white);
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -167,7 +169,7 @@ header {
   }
 }
 
-/* ======= HERO SECTION CLEANED ======= */
+/* ======= HERO SECTION ======= */
 .hero {
   padding: 80px 0;
   background-color: var(--white);
@@ -175,20 +177,20 @@ header {
 
 .hero-container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 40px;
   padding: 60px 0;
 }
 
 .hero-text {
-  flex: 1 1 55%;
+  flex: 0 0 55%;
   text-align: left;
 }
 
 .hero-image {
-  flex: 0 0 300px;
+  flex: 0 0 40%;
   text-align: right;
 }
 
@@ -310,9 +312,4 @@ footer {
   font-weight: 600;
   margin-top: 10px;
   color: var(--accent);
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
