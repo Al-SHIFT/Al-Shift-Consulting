@@ -250,3 +250,13 @@ footer {
   margin-top: 10px;
   color: var(--accent);
 }
+@media (max-width: 768px) {
+  .footer-content {
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+}
