@@ -197,11 +197,11 @@ footer {
 .footer-bottom {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
-  padding-top: 10px;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  color: var(--primary); /* or var(--text-color) if you want dark on white */
-  background-color: var(--white); /* optional */
+  padding: 8px 15px 4px; /* less top and bottom padding */
+  font-size: 0.78rem;    /* smaller font size */
+  line-height: 1.2;      /* tighter line spacing */
+  color: var(--primary); /* primary color text */
+  background-color: var(--white);
 }
 
 .footer-content {
