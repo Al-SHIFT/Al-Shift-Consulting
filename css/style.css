@@ -108,15 +108,27 @@ header {
 
 .nav-item a {
   color: var(--white);
+  font-size: 0.95rem;
   font-weight: 600;
-  padding: 8px 15px;
+  letter-spacing: 0.5px;
+  padding: 10px 16px;
   border-radius: 4px;
-  transition: var(--transition);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-item a:hover {
   background-color: var(--accent);
   color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .nav-item a {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+  }
 }
 
 /* Mobile Menu */
