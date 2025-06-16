@@ -503,3 +503,58 @@ body {
     text-align: center;
   }
 }
+.hero {
+  padding: 60px 0 0; /* reduce top padding, remove bottom to avoid double spacing */
+  background-color: var(--white);
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: var(--secondary);
+}
+
+.tagline {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary);
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
