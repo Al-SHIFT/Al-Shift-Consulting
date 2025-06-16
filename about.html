@@ -2,16 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about AL-SHIFT Consulting's vision, mission, values, and the founder behind our agile learning solutions.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Learn about AL-SHIFT Consulting's vision, mission, values, and the founder behind our agile learning solutions."/>
   <title>About Us | AL-SHIFT Consulting</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <header>
@@ -42,7 +42,7 @@
   </header>
 
   <main>
-    <section class="page-header">
+    <section class="page-header" style="padding-bottom: 20px;">
       <div class="container">
         <h1>About Us</h1>
         <p class="breadcrumbs"><a href="index.html">Home</a> / About Us</p>
@@ -61,11 +61,8 @@
 
     <section class="founder">
       <div class="container">
-        <div class="founder-content">
-          <div class="founder-image">
-            <img src="images/shirin2.jpg" alt="Shirin - Founder">
-          </div>
-          <div class="founder-bio">
+        <div class="founder-content" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+          <div class="founder-bio" style="flex: 1 1 55%;">
             <h2>The Shift Behind AL-SHIFT</h2>
             <blockquote>"Learning is not just content—it's a strategy for transformation."</blockquote>
             <p>I'm a learning strategist, facilitator, and programme designer with over 15 years of international experience working at the intersection of education, human rights, youth empowerment, and innovation.</p>
@@ -73,27 +70,51 @@
             <h3>Shirin Husseini</h3>
             <p class="founder-title">Founder, Learning Architect & Lead Consultant</p>
           </div>
+          <div class="founder-image" style="flex: 1 1 40%; text-align: center;">
+            <img src="images/shirin2.jpg" alt="Shirin - Founder" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <div class="footer-logo">
-            <img src="https://page.genspark.site/v1/base64_upload/5c29a7cddafe1d9f8e8e3cd4cbd5328c" alt="AL-SHIFT Logo">
-          </div>
-          <p class="footer-tagline">Building Agile Solutions Through Transformative Learning</p>
-          <p class="footer-description">Agile, inclusive learning solutions for education, skills development, and youth empowerment.</p>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="footer-logo" style="margin-bottom: 15px;">
+          <img src="https://page.genspark.site/v1/base64_upload/5c29a7cddafe1d9f8e8e3cd4cbd5328c" alt="AL-SHIFT Logo">
         </div>
-        <!-- Add other footer columns here -->
+        <p class="footer-tagline">Building Agile Solutions Through Transformative Learning</p>
+        <p class="footer-description">Agile, inclusive learning solutions for education, skills development, and youth empowerment.</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 AL-SHIFT Consulting. All rights reserved.</p>
-        <p>Designed with purpose, powered by learning.</p>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="how-we-work.html">How We Work</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="join-us.html">Join Us</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
       </div>
+
+      <div class="footer-column">
+        <h4>Get in Touch</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-envelope"></i> <a href="mailto:contact@al-shift.com">contact@al-shift.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Amsterdam, Netherlands | Global Reach</li>
+          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/company/al-shift-agile-learning-solutions/" target="_blank">LinkedIn Profile</a></li>
+          <li><i class="fas fa-building"></i> Chamber of Commerce: 65409841</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom" style="background-color: var(--primary); text-align: center; padding: 15px 0; font-size: 0.9rem; color: var(--white);">
+      <p>&copy; 2025 AL-SHIFT Consulting. All rights reserved.</p>
+      <p>Designed with purpose, powered by learning.</p>
     </div>
   </footer>
 
