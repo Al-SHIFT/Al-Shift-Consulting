@@ -304,3 +304,7 @@ footer {
   background-color: var(--secondary); /* Slight hover contrast */
   color: #ffffff;
 }
+/* ======= Founder Section ======= */
+.founder {
+  padding: 40px 0 60px;
+}
