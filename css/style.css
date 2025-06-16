@@ -167,7 +167,6 @@ header {
   }
 }
 
-/* ======= HERO SECTION ======= */
 /* ======= HERO SECTION CLEANED ======= */
 .hero {
   padding: 80px 0;
@@ -176,7 +175,7 @@ header {
 
 .hero-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
@@ -189,7 +188,7 @@ header {
 }
 
 .hero-image {
-  flex: 1 1 35%;
+  flex: 0 0 300px;
   text-align: right;
 }
 
@@ -312,8 +311,8 @@ footer {
   margin-top: 10px;
   color: var(--accent);
 }
+
 body {
   margin: 0;
   padding: 0;
 }
-
