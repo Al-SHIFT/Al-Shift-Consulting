@@ -177,28 +177,26 @@ header {
 
 .hero-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 40px;
-  padding: 60px 0;
 }
 
 .hero-text {
-  flex: 1 1 55%;
-  min-width: 300px;
+  flex: 1 1 60%;
   text-align: left;
 }
 
 .hero-image {
   flex: 1 1 40%;
-  min-width: 250px;
   text-align: right;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 300px;
+  height: auto;
+  max-width: 400px;
   border-radius: 8px;
   box-shadow: var(--shadow);
 }
@@ -238,6 +236,7 @@ header {
   background-color: var(--secondary);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
