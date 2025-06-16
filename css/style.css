@@ -195,11 +195,13 @@ footer {
 }
 
 .footer-bottom {
-  background-color: var(--white);
-  color: var(--primary);
   text-align: center;
-  padding: 20px 15px 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--primary); /* or var(--text-color) if you want dark on white */
+  background-color: var(--white); /* optional */
 }
 
 .footer-content {
