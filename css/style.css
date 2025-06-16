@@ -185,6 +185,9 @@ header {
   .hero-text, .hero-image { flex: 1 1 100%; }
   .hero-image img { max-width: 90%; }
 }
+.hero-text h2 {
+  color: #6CB0A8;
+}
 
 /* ======= FOOTER ======= */
 footer {
