@@ -340,4 +340,7 @@ footer {
     max-width: 80%;
   }
 }
+.founder-bio h2 {
+  margin-bottom: 20px; /* Increase as needed */
+}
 
