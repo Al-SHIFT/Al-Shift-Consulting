@@ -125,24 +125,29 @@ header {
   color: var(--primary);
 }
 
-/* Mobile Menu */
+/* Mobile menu toggle */
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
 }
+
 .menu-toggle .bar {
   width: 25px;
   height: 3px;
   background-color: var(--primary);
 }
 
+/* Make toggle visible on smaller screens */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
   .nav-menu {
     display: none;
     flex-direction: column;
-    align-items: flex-start;
     position: absolute;
     top: 70px;
     right: 20px;
@@ -151,10 +156,15 @@ header {
     box-shadow: var(--shadow);
     padding: 1rem;
     border-radius: 8px;
+    z-index: 999;
   }
 
   .nav-menu.active {
     display: flex;
+  }
+
+  .nav-item {
+    text-align: left;
   }
 
   .nav-item a {
