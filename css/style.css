@@ -188,7 +188,7 @@ header {
 
 /* ======= FOOTER ======= */
 footer {
-  background-color: var(--primary);
+  background-color: var(--secondary); /* now uses #6CB0A8 */
   color: var(--white);
   padding: 60px 0 30px;
   font-size: 0.95rem;
