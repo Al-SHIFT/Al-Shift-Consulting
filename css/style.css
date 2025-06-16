@@ -171,6 +171,9 @@ header {
     justify-content: space-between;
   }
 }
+.nav-item.explore {
+  margin-left: auto;
+}
 
 /* ======= HERO SECTION ======= */
 .hero-container {
