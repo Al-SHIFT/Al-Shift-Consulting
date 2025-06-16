@@ -304,7 +304,40 @@ footer {
   background-color: var(--secondary); /* Slight hover contrast */
   color: #ffffff;
 }
-/* ======= Founder Section ======= */
+/* ======= Founder Section Adjustments ======= */
 .founder {
-  padding: 20px 0 40px;
+  padding-top: 40px;       /* Reduce the space above */
+  padding-bottom: 40px;    /* Even spacing below */
 }
+
+.founder-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.founder-image {
+  flex: 1 1 30%;           /* Smaller on desktop */
+  max-width: 250px;        /* Caps width for alignment */
+}
+
+.founder-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;       /* Prevents image from overtaking text */
+  object-fit: cover;
+  border-radius: 8px;      /* Keeps styling consistent */
+}
+
+@media (max-width: 768px) {
+  .founder-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .founder-image {
+    max-width: 80%;
+  }
+}
+
