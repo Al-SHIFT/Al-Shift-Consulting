@@ -306,8 +306,8 @@ footer {
 }
 /* ======= Founder Section Adjustments ======= */
 .founder {
-  padding-top: 40px;       /* Reduce the space above */
-  padding-bottom: 40px;    /* Even spacing below */
+  padding-top: 40px;  /* Reduced from default 80px */
+  padding-bottom: 80px; /* Keep bottom spacing consistent */
 }
 
 .founder-content {
