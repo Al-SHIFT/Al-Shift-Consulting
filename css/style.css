@@ -349,4 +349,16 @@ footer {
 .founder-bio h2 {
   margin-bottom: 20px; /* Increase as needed */
 }
+.founder-bio h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.founder-title {
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
 
