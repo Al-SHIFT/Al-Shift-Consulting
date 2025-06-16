@@ -325,7 +325,7 @@ footer {
 .founder-image img {
   width: 100%;
   height: auto;
-  max-height: 400px;       /* Prevents image from overtaking text */
+  max-height: 500px;       /* Prevents image from overtaking text */
   object-fit: cover;
   border-radius: 8px;      /* Keeps styling consistent */
 }
