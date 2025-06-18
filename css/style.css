@@ -428,6 +428,13 @@ footer {
   border-radius: 8px;
   background-color: #f4f4f4;
 }
+.services-intro,
+.services-full,
+.themes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 @media (max-width: 768px) {
   .service-item {
     flex-direction: column;
